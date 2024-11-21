@@ -1,0 +1,5 @@
+<resources>
+    <string name='app_name'>SaluAPP</string>
+    <string name="likes_count">Likes: %d</string>
+</resources>
+

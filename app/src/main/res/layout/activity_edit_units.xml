@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".Units.EditUnitsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Editar unidad"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="170dp"
+                android:textColor="#10AB6A"/>
+            <!--edit text for the unit name-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTILUnitName"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Ingrese el nombre de la unidad"
+                android:padding="5dp"
+
+                android:textColorHint="#10AB6A"
+                app:hintTextColor="#10AB6A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtUnitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:textColor="#10AB6A"
+                    android:textColorHint="#10AB6A"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--edit text for the image link -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTILUnitImageLink"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:hint="Ingrese la URL de la imagen"
+                android:padding="5dp"
+                android:textColorHint="#10AB6A"
+                app:hintTextColor="#10AB6A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtUnitImageLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:textColor="#10AB6A"
+                    android:textColorHint="#10AB6A"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--edit text for the unit description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTILUnitDescription"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:hint="Inserte una descripción de la unidad"
+                android:padding="5dp"
+                android:textColorHint="#10AB6A"
+                app:hintTextColor="#10AB6A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtUnitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="#10AB6A"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--edit text for recommendation-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTILUnitRecommended"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="10dp"
+                android:hint="Recomendación"
+                android:padding="5dp"
+                android:textColorHint="#10AB6A"
+                app:hintTextColor="#10AB6A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtUnitRecommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:textColor="#10AB6A"
+
+                    android:textColorHint="#10AB6A"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--edit text for video link-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idVILUnitLink"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Ingrese el id del video"
+                android:padding="5dp"
+
+                android:textColorHint="#10AB6A"
+                app:hintTextColor="#10AB6A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtVILUnitLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:textColor="#10AB6A"
+                    android:textColorHint="#10AB6A"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!--button - modify the unit-->
+                <Button
+                    android:id="@+id/idBtnAddUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/green"
+                    android:text="Editar \n Unidad"
+                    android:textAllCaps="false" />
+
+                <!--button - delete unit-->
+                <Button
+                    android:id="@+id/BtnDeleteUnit"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/green"
+                    android:text="Borrar \n Unidad"
+
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--progress bar - loading indicator-->
+        <ProgressBar
+            android:id="@+id/idPBUnitLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_back"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>

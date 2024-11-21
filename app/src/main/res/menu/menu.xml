@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opcion1"
+        android:title="Perfil"
+        android:textAppearance="@style/MenuTextAppearance"/>
+
+    <item
+        android:id="@+id/opcion2"
+        android:title="Ver perfiles"
+        android:textAppearance="@style/MenuTextAppearance"/>
+
+    <item
+        android:id="@+id/opcion3"
+        android:title="Cerrar Sesion"
+        android:textAppearance="@style/MenuTextAppearance"/>
+
+    <item
+        android:id="@+id/buscar"
+        android:title="Buscar"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+</menu>

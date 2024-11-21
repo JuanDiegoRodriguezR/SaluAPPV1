@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:padding="13dp"
+    android:background="@drawable/fondologin"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="SaluAPP"
+        android:textColor="#0ea8eb"
+        android:fontFamily="@font/estudio"
+        android:textSize="35dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="INICIAR SESIÓN"
+                android:layout_gravity="center"
+                android:textColor="#10AB6A"
+                android:fontFamily="@font/estudio"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Correo"
+                android:textColor="#10AB6A"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/CorreoInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="example@gmail.com"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_border_purple"
+                android:textColorHint="#10AB6A"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Contraseña"
+                android:textColor="#10AB6A"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ContraseñaInicio"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="********"
+                android:textColorHint="#10AB6A"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_border_purple" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:backgroundTint="#0ea8eb"
+        android:text="Enviar"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/OlvidasteContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="15dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_margin="13dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/RegistroInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Registrarse"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="invisible" />
+
+</LinearLayout>

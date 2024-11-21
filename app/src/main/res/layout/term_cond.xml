@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="530dp"
+    android:layout_gravity="center"
+    app:layout_constraintCircleRadius="60dp"
+    android:background="@drawable/abajo"
+    >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="TERMINOS Y CONDICIONES"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="335dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="1. Este servicio es para uso personal, no comercial.\n2. El contenido es propiedad de SALUAPP.\n3. Respetamos tu privacidad, consulta nuestra política.\n4. No somos responsables de sitios de terceros.\n5. No asumimos responsabilidad por pérdidas.\n5. Nos reservamos el derecho de modificar estos términos.\n6. Podemos dar por terminado el acceso en cualquier momento.\n7. Estos términos se rigen por las leyes de Colombia."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

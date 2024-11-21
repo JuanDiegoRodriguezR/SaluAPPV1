@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idRLBSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:padding="4dp">
+
+    <!--Text view for the unit name-->
+    <TextView
+        android:id="@+id/UnitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:padding="4dp"
+        android:text="Unit Name"
+        android:textColor="#10AB6A"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!--Image view for the unit image-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="70dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/UnitName">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/IVUnit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/perfil_redondo"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/border_perfil" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--Text view for the unit description-->
+    <TextView
+        android:id="@+id/UnitDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UnitName"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toEndOf="@id/cardviewimage"
+        android:layout_toRightOf="@id/cardviewimage"
+        android:padding="3dp"
+        android:text="Description"
+        android:textColor="#10AB6A" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UnitDesc"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--button to edit the unit-->
+        <Button
+            android:id="@+id/EditUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:backgroundTint="#10AB6A"
+            android:textAllCaps="false" />
+
+        <!--button to view the unit-->
+        <Button
+            android:id="@+id/ViewUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Ver más"
+            android:backgroundTint="#10AB6A"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

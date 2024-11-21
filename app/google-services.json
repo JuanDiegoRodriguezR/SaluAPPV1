@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "325182140770",
+    "project_id": "saluapp-b0740",
+    "storage_bucket": "saluapp-b0740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325182140770:android:e731c9825af04c3473fc3b",
+        "android_client_info": {
+          "package_name": "com.example.SaluAPP"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WcZFovdn_3uaon4pk6p9n_w5KtwrhIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
